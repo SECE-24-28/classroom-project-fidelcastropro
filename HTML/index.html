@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        .box{
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+        }
+
+        body{
+            height: 95vh;
+            text-align: center;
+        }
+
+        .page{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #parent1{
+            height: 50%;
+            width: 50%;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 40%;
+            width:80%;
+        }
+
+        .horizontalContainer{
+            display: flex;
+            flex-direction: row;
+            gap : 20px;
+            height: 60%;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .b1{
+            width : 100%;
+            height : 20%;
+            justify-content: left;
+        }
+
+        .b2{
+            width: 100%;
+            height: 20%;
+            justify-content: center;
+        }
+
+        .b3{
+            width: 100%;
+            height: 30%;
+            justify-content: center;
+        }
+
+        .b4{
+            width: 30%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .b5{
+            width: 70%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .b6{
+            justify-content: center;
+            width: 80%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "page">
+        <div class="container">
+            <div class="box b1"><p>Logo</p></div>
+            <div class="box b2"><p>Navigation</p></div>
+            <div class="box b3"><p>Header/Banner</p></div>
+        </div>
+        <div class="horizontalContainer">
+            <div class="box b4"><p>Side Bar</p></div>
+            <div class="box b5"><p>Body Area</p></div>
+        </div>
+        <div class="box b6"><p>Footer</p></div>
+    </div>
+</body>
+</html>
