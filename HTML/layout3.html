@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        .box{
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+        }
+
+        body{
+            height: 95vh;
+        }
+
+        .page{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .container{
+            display: flex;
+            justify-content: space-between;
+            height: 60%;
+            width:80%;
+        }
+
+        .horizontalContainer{
+            display: flex;
+            flex-direction: row;
+            gap : 20px;
+            height: 60%;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .b1{
+            width : 80%;
+            height : 20%;
+            justify-content: space-between;
+        }
+
+        .b3{
+            background-color: white;
+            width: 30%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .b4{
+            height: 30%;
+            width : 100%;
+            justify-content: center;
+        }
+
+        .b5{
+            height: 65%;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .b6{
+            justify-content: center;
+            width: 80%;
+        }
+
+        .verticals{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class = "page">
+        <div class="box b1"><p>Logo</p></div>
+            <div class="container">
+                <div class="box b3"><p>Side Bar Navigation</p></div>
+                <div class="verticals">
+                    <div id="headbanner" class="box b4"><p>Head and Banner</p></div>
+                    <div id="BodyArea" class="box b5">Body area</div>
+                </div>
+            </div>
+        <div class="box b6"><p>Footer</p></div>
+    </div>
+</body>
+</html>

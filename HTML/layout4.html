@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        .box{
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+        }
+
+        body{
+            height: 98vh;
+            text-align: center;
+        }
+
+        .page{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #parent1{
+            height: 50%;
+            width: 50%;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 40%;
+            width:80%;
+        }
+
+        .horizontalContainer{
+            display: flex;
+            flex-direction: row;
+            gap : 20px;
+            height: 30%;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .b1{
+            width : 80%;
+            height : 10%;
+            justify-content: space-between;
+        }
+
+        .b5{
+            height: 100%;
+            width: 33%;
+            justify-content: center;
+        }
+
+        .b4{
+            height: 100%;
+            width: 33%;
+            justify-content: center;
+        }
+
+        .b7{
+            height: 100%;
+            width: 33%;
+            justify-content: center;
+        }
+
+        .b6{
+            justify-content: center;
+            width: 80%;
+            height: 10%;
+        }
+
+        .boxescontainer{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 10%;
+
+        }
+
+        .ibox{
+            width: 21%;
+            height: 80px;
+            background-color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "page">
+            <div class="box b1"><p>Logo</p><p>Navigation</p></div>
+            <div class="boxescontainer">
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+            </div>
+            <div class="boxescontainer">
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+            </div>
+            <div class="boxescontainer">
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+            </div>
+            <div class="boxescontainer">
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+                <div class="ibox"></div>
+            </div>
+            <div class="horizontalContainer">
+                <div class="box b4"><p>Box 1</p></div>
+                <div class="box b5"><p>Box 2</p></div>
+                <div class="box b7"><p>Box 3</p></div>
+            </div>
+            <div class="box b6"><p>Footer</p></div>
+    </div>
+</body>
+</html>
